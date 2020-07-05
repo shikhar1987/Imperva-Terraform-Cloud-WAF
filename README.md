@@ -27,9 +27,11 @@ secret_key = "xxx"
 ```
 
 Note: This implementation uses the plugin from:
+
 https://github.com/imperva/terraform-provider-incapsula
 
 The incapsula provider available on hashicorp website doesn't support few features like setting up data region:
+
 https://www.terraform.io/docs/providers/incapsula/r/site.html
 
 If you wish to use terraform cloud, be sure to comment out data region from main.
