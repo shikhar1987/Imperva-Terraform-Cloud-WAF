@@ -12,7 +12,6 @@ This main file lets you perform the following functions in one go:
 2. Automatically create a cert validation record in your route53 zone.
 3. Automatically create a CNAME record in your route53 zone pointing to Imperva CDN. In case you don't wish to do this during onboarding comment the resource "cname-record". 
 
-File name can be anything since you will input the file name during terraform apply.
 
 In addition to that you need to create a **secrets.tfvars** file with the following contents which again you need to input during terraform apply:
 
