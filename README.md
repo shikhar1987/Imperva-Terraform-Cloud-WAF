@@ -10,7 +10,7 @@ This main file lets you perform the following functions in one go:
 
 1. Utilizing the csvdecode, it allows you to use a CSV file as an input for all the information instead of adding all that information manually in main.tf file. Have a look at **domain_information.csv** as an example. File name can be anything since you will input the file name during terraform apply.
 2. Automatically create a cert validation record in your route53 zone.
-3. Automatically create a CNAME record in your route53 zone pointing to Imperva CDN. In case you don't wish to do this during onboarding comment the resource "cname-record".  **This won't work until next update due to an open issue tracked in the link given below**
+3. Automatically create a CNAME record in your route53 zone pointing to Imperva CDN. In case you don't wish to do this during onboarding comment the resource "cname-record".  **This won't work until the next update due to an open issue tracked in the link given below**
 
 In addition to that you need to create a **secrets.tfvars** file with the following contents which again you need to input during terraform apply:
 
