@@ -1,1 +1,3 @@
 secret.tfvars
+.tfstate
+.backup
