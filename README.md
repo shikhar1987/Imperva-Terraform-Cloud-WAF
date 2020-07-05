@@ -2,9 +2,9 @@
 
 This lets you use a CSV file as an input for all the information instead of adding all that information manually in main.tf file.
 
-domain_information.csv is the file that you need to share with your customer. They'll fill this file with the domain they would like to onboard. File name can be anything since you will input the file name during apply.
+domain_information.csv is the file that you need to fill with the domains that you wish to onboard. File name can be anything since you will input the file name during terraform apply.
 
-In addition to that you need to create a secrets.tfvars file with the following contents:
+In addition to that you need to create a secrets.tfvars file with the following contents which again you need to input during terraform apply:
 
 ```
 #Imperva API Information
