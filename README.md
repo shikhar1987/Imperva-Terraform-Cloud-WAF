@@ -34,3 +34,7 @@ The incapsula provider available on hashicorp website doesn't support few featur
 https://www.terraform.io/docs/providers/incapsula/r/site.html
 
 If you wish to use terraform cloud, be sure to comment out data region from main.
+
+Look at the following link for open issues:
+
+https://github.com/imperva/terraform-provider-incapsula/issues
