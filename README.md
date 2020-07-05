@@ -1,4 +1,4 @@
-# Automating onboarding of websites on Imperva Cloud WAF using Terraform
+# Onboard websites on Imperva Cloud WAF using Terraform and CSV
 
 Tested this on:
 ```
