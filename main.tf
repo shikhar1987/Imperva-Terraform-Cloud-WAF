@@ -39,7 +39,7 @@ resource "incapsula_site" "devops-sites" {
   records = [incapsula_site.devops-sites[0].domain_verification]
 }*/
 
-resource "aws_route53_record" "cname-record" {
+/*resource "aws_route53_record" "cname-record" {
     count = length(incapsula_site.devops-sites)
 
   depends_on = [incapsula_site.devops-sites]
@@ -50,7 +50,7 @@ resource "aws_route53_record" "cname-record" {
   ttl = "60"
   records = [incapsula_site.devops-sites[count.index].dns_cname_record_value]
 }
-
+*/
 output "CNAME" {
   //value       = aws_route53_record.cname-record.*.records
   value       = incapsula_site.devops-sites.*.id
