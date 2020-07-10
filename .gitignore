@@ -1,3 +1,4 @@
 secret.tfvars
 .tfstate
 .backup
+.terraform
