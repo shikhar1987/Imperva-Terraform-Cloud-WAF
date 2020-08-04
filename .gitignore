@@ -2,3 +2,4 @@ secret.tfvars
 .tfstate
 .backup
 .terraform
+domain_information.csv
