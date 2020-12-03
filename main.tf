@@ -1,6 +1,7 @@
 provider "incapsula" {
   api_id  = var.api_id
   api_key = var.api_key
+  region = AU
 }
 /*provider "aws" {
   region = var.region
