@@ -2,14 +2,14 @@ provider "incapsula" {
   api_id  = var.api_id
   api_key = var.api_key
 }
-provider "aws" {
+/*provider "aws" {
   region = var.region
   //access_key = var.access_key
   //secret_key = var.secret_key
 }
 data "aws_route53_zone" "zone" {
   name = "securitytestingsolutions.com."
-}
+}*/
 locals {
   application_information = csvdecode(file(var.input_file))
 }
@@ -39,7 +39,7 @@ resource "incapsula_site" "devops-sites" {
   records = [incapsula_site.devops-sites[0].domain_verification]
 }*/
 
-resource "aws_route53_record" "cname-record" {
+/*resource "aws_route53_record" "cname-record" {
     count = length(incapsula_site.devops-sites)
 
   depends_on = [incapsula_site.devops-sites]
@@ -49,7 +49,7 @@ resource "aws_route53_record" "cname-record" {
   zone_id = data.aws_route53_zone.zone.zone_id
   ttl = "60"
   records = [incapsula_site.devops-sites[count.index].dns_cname_record_value]
-}
+}*/
 
 output "CNAME" {
   //value       = aws_route53_record.cname-record.*.records
