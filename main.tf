@@ -1,7 +1,7 @@
 provider "incapsula" {
   api_id  = var.api_id
   api_key = var.api_key
-  region = AU
+  //region = AU
 }
 /*provider "aws" {
   region = var.region
@@ -27,6 +27,7 @@ resource "incapsula_site" "devops-sites" {
   site_ip                = local.application_information[count.index].site_ip
   ignore_ssl            = true
   remove_ssl            = true
+  data_storage_region = AU
 }
 
 /*resource "aws_route53_record" "cert-validation-record" {
