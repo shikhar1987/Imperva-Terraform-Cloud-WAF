@@ -27,7 +27,7 @@ resource "incapsula_site" "devops-sites" {
   site_ip                = local.application_information[count.index].site_ip
   ignore_ssl            = true
   remove_ssl            = true
-  data_storage_region = AU
+  //data_storage_region = AU
 }
 
 /*resource "aws_route53_record" "cert-validation-record" {
