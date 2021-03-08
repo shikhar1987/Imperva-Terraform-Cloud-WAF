@@ -30,6 +30,12 @@ resource "incapsula_site" "devops-sites" {
   //data_storage_region = AU
 }
 
+resource "incapsula_incap_rule" "Demo-Rules" {
+    count = length(local.application_information)
+
+  domain                 = local.application_information[count.index].domain
+}
+
 /*resource "aws_route53_record" "cert-validation-record" {
 
   depends_on = [incapsula_site.devops-sites]
