@@ -2,4 +2,5 @@ secret.tfvars
 .tfstate
 .backup
 .terraform
+.terraform.locl.hcl
 domain_information.csv
