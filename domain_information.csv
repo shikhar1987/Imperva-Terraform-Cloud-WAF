@@ -1,10 +1,10 @@
-account_id,domain,force_ssl,data_storage_region,send_site_setup_emails,site_ip
-1544595,devops101.imperva.securitytestingsolutions.com,TRUE,AU,FALSE,3.24.114.188
-1544595,devops102.imperva.securitytestingsolutions.com,TRUE,AU,FALSE,3.24.114.188
-1544595,devops103.imperva.securitytestingsolutions.com,TRUE,AU,FALSE,3.24.114.188
-1544595,devops104.imperva.securitytestingsolutions.com,TRUE,AU,FALSE,3.24.114.188
-1544595,devops110.imperva.securitytestingsolutions.com,TRUE,AU,FALSE,3.24.114.188
-1407530,testing568.imperva.securitytestingsolutions.com,TRUE,AU,FALSE,3.24.114.188
-1407530,testingabc.imperva.securitytestingsolutions.com,TRUE,AU,FALSE,3.24.114.188
-1407530,testingforkoh.imperva.securitytestingsolutions.com,TRUE,AU,FALSE,3.24.114.188
-1407530,testingforkoh2.imperva.securitytestingsolutions.com,TRUE,AU,FALSE,3.24.114.190
+account_id,domain,force_ssl,data_storage_region,send_site_setup_emails,site_ip,,rule_name,site_id,action,filter
+1544595,devops101.imperva.securitytestingsolutions.com,TRUE,AU,FALSE,3.24.114.188,,Demo Rule for Koh,10000,RULE_ACTION_BLOCK_IP,"Full-URL == \""/someurl\"""
+1544595,devops102.imperva.securitytestingsolutions.com,TRUE,AU,FALSE,3.24.114.188,,,,,
+1544595,devops103.imperva.securitytestingsolutions.com,TRUE,AU,FALSE,3.24.114.188,,,,,
+1544595,devops104.imperva.securitytestingsolutions.com,TRUE,AU,FALSE,3.24.114.188,,,,,
+1544595,devops110.imperva.securitytestingsolutions.com,TRUE,AU,FALSE,3.24.114.188,,,,,
+1407530,testing568.imperva.securitytestingsolutions.com,TRUE,AU,FALSE,3.24.114.188,,,,,
+1407530,testingabc.imperva.securitytestingsolutions.com,TRUE,AU,FALSE,3.24.114.188,,,,,
+1407530,testingforkoh.imperva.securitytestingsolutions.com,TRUE,AU,FALSE,3.24.114.188,,,,,
+1407530,testingforkoh3.imperva.securitytestingsolutions.com,TRUE,AU,FALSE,3.24.114.190,,,,,
